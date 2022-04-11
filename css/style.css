@@ -1,32 +1,27 @@
 :root{
-    --primary-theme-color: #20232a;
     --secondary-theme-color: #282c34;
-    --text-color: #fff;
-    --primary-shadow-color: #8888;
-    --secondary-shadow-color: #21242c80;
     --shadow-color: #8888;
-    --button-color: #61dafb;
-    --button-color-active: #fff;
-    --button-text-color: #000;
-    --primary-highlight: #fff000;
-    --secondary-highlight: #ffd700;
-    --padding-section: 2em 0;
+    --body-color: #f5f5db;
+    --primary-highlight: #008000;
     --padding-container: 0 2em;
     --max-width-container: 1024px;
-    --border-radius: 0.5rem;
     --all-transitions: all 0.25s;
 }
 
 .body{
-    background-color: var(--button-color);
+    background-color: var(--body-color);
     margin: 0;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
-
+}
+.body-title{
+    position: relative;
+    top: 4rem;
+    text-align: center;
 }
 .header{
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -90,15 +85,24 @@
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
-    background-color: var(--button-color);
+    background-color: var(--body-color);
     padding: 1rem;
     width: auto;
     height: auto;
+    
 }
 .login-body-link{
     font-size: 1.5rem;
     font-weight: bold;
     color: var(--primary-highlight);
+    transition: var(--all-transitions);
+    
+}
+.login-body-link::before{
+    content: "👈";
+    position: relative;
+    bottom: 4px;
+    margin: 0.5rem;
 }
 .login-body-link:hover{
     transform: scale(1.25);
@@ -144,3 +148,104 @@
     box-shadow: 2px 2px 2px black; 
 }
 
+.body-contacto{
+    background-color: var(--body-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto-body-link{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-highlight);
+    transition: var(--all-transitions);
+}
+
+.contacto-body-link::before{
+    content: "👈";
+    position: relative;
+    bottom: 4px;
+    margin: 0.5rem;
+}
+.contacto-body-link:hover{
+    transform: scale(1.25);
+}
+
+.body-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.table{
+    border: 2px double black;
+    width: 50%;
+}
+.table-header{
+    font-size: 20px;
+    background-color: beige;
+    color: crimson;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.table__row{
+    background-color: aquamarine;
+    color: green;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+th,td{
+    border: 2px double black;
+}
+
+.main{
+    position: relative;
+    top: 6rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    max-width: var(--max-width-container);
+    margin: auto;
+    padding: var(--padding-container);
+}
+.article{
+    display: flex;
+}
+.article-container{
+    display: flex;
+    padding: 0 2rem;
+    
+}
+.article__card{
+    background-color: #5a7cd2bf;
+    max-width: 256px;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    text-align: center;
+    border: 4px solid black;
+}
+.article__card-title{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.article__card-keywords{
+    font-size: 1rem;
+    margin: 0;
+}
+.article__card-image{
+    border: 2px solid black;
+    border-radius: 6px;
+}
+.article-card-button{
+    font-size: 1rem;
+    margin: 0;
+    padding: 0.25rem;
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    border: 2px solid white;
+    border-radius: 4px;
+}
