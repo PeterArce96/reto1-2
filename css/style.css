@@ -3,6 +3,7 @@
     --shadow-color: #8888;
     --body-color: #f5f5db;
     --primary-highlight: #008000;
+    --shadow-color: #fff000;
     --padding-container: 0 2em;
     --max-width-container: 1024px;
     --all-transitions: all 0.25s;
@@ -16,8 +17,9 @@
     min-height: 100vh;
 }
 .body-title{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: relative;
-    top: 4rem;
+    top: 5rem;
     text-align: center;
 }
 .header{
@@ -48,14 +50,15 @@
     transition: var(--all-transitions);
 }
 .header-nav__link-logo-container:hover{
-    box-shadow: 0 0 0.25rem 0 var(--primary-highlight),
-    0 0 0.5rem var(--primary-highlight);
+    box-shadow: 0 0 0.25rem 0 var(--shadow-color),
+    0 0 0.5rem var(--shadow-color);
 } 
 .header-nav__link-logo{
     height: 100%;
 }
 
 .header-nav__menu-link-list{
+    
     display: flex;
     font-family: 'Grape Nuts', cursive;
     font-size: 1.25rem;
@@ -65,12 +68,14 @@
 }
 
 .header-nav__menu-link-item{
+    
     display: flex;
     
 }
 .header-nav_menu-link{
+    font-size: 1.35rem;
     position: relative;
-    color: var(--secondary-theme-color);
+    color: white;
     text-decoration: none;
     font-weight: bold;
     transition: var(--all-transitions);
@@ -172,7 +177,7 @@
     transform: scale(1.25);
 }
 
-.body-title{
+.body-contacto-title{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 .table{
