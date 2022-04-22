@@ -10,7 +10,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grape+Nuts&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;600;700&display=swap" rel="stylesheet">
     <!-- Primary Meta Tags -->
     <title>Productos</title>
     <meta name="title" content="Productos">
@@ -31,13 +31,16 @@
     <meta property="twitter:image" content="https://peterarce96.github.io/reto1-2/img/reto-meta.png">
 </head>
 <body class="body">
-    <h1 class="body-title">Productos</h1>
     <header class="header">
         <nav class="header-nav">
             <div class="header-nav__container">
                 <a href="" class="header-nav__link-logo-container">
                     <img src="./img/logo.png" alt="Logo Peter Arce" class="header-nav__link-logo">
                 </a>
+                <label for="headerNavMenuIcon" class="header-nav__menu-icon-label">
+                    <i class="bi bi-filter-right"></i>
+                </label>
+                <input type="checkbox" name="" id="headerNavMenuIcon" class="header-nav__menu-icon-checkbox"/>
                 <ul class="header-nav__menu-link-list">
                     <li class="header-nav__menu-link-item">
                         <a href="#" class="header-nav_menu-link">Inicio</a>
@@ -46,71 +49,113 @@
                         <a href="./contacto.html" class="header-nav_menu-link">Contacto</a>
                     </li>
                     <li class="header-nav__menu-link-item">
-                        <a href="#" class="header-nav_menu-link"><i class="bi bi-cart3"></i></a>
+                        <a href="#" class="header-nav_menu-link"><i class="bi bi-cart3"></i> Carrito</a>
                     </li>
                     <li class="header-nav__menu-link-item">
-                        <a href="./login.html" class="header-nav_menu-link"><i class="bi bi-person-bounding-box"></i></a>
+                        <a href="./login.html" class="header-nav_menu-link"><i class="bi bi-person-bounding-box"></i> Login</a>
                     </li>    
                 </ul>
             </div>
         </nav>
     </header>
     <main class="main">
-        <article class="article">
-            <div class="article-container">
-                <div class="article__card">
-                    <h1 class="article__card-title">Polo Adidas</h1>
-                    <h2 class="article__card-keywords">Blanco, Adidas, Algodón, Hombre</h2>
-                    <img src="./img/polo.png" alt="" class="article__card-image">
-                    <button class="article-card-button">Detalles</button>
-                    <button class="article-card-button">Agregar a carrito</button>
+        <section class="products">
+            <div class="products-container">
+                <h2 class="products__title">⭐Productos⭐</h2>
+                <div class="products__products-list">
+                    <article class="products__products-item">
+                        <figure class="products__item-image-container">
+                            <img src="./img/polo.png" alt="Polo adidas" class="products__item-image">
+                        </figure>
+                        <div class="products__item-data">
+                            <h2 class="products__item-data-title">Polo Adidas
+                            </h2>
+                            <h3 class="products__item-data-keywords">Blanco, Adidas, Algodón, Hombre</h3>
+                            <h5 class="products__item-data-price">S/. 49</h5>
+                        </div>
+                        <div class="products__item-button-container">
+                            <a href="#" class="products__item-button">Detalles</a>
+                            <a href="#" class="products__item-button"> Agregar<i class="bi bi-cart3"></i></a>
+                        </div>
+                    </article>
+                    <article class="products__products-item">
+                        <figure class="products__item-image-container">
+                            <img src="./img/polo.png" alt="Polo adidas" class="products__item-image">
+                        </figure>
+                        <div class="products__item-data">
+                            <h2 class="products__item-data-title">Polo Adidas
+                            </h2>
+                            <h3 class="products__item-data-keywords">Blanco, Adidas, Algodón, Hombre</h3>
+                            <h5 class="products__item-data-price">S/. 49</h5>
+                        </div>
+                        <div class="products__item-button-container">
+                            <a href="#" class="products__item-button">Detalles</a>
+                            <a href="#" class="products__item-button"> Agregar<i class="bi bi-cart3"></i></a>
+                        </div>
+                    </article>
+                    <article class="products__products-item">
+                        <figure class="products__item-image-container">
+                            <img src="./img/polo.png" alt="Polo adidas" class="products__item-image">
+                        </figure>
+                        <div class="products__item-data">
+                            <h2 class="products__item-data-title">Polo Adidas
+                            </h2>
+                            <h3 class="products__item-data-keywords">Blanco, Adidas, Algodón, Hombre</h3>
+                            <h5 class="products__item-data-price">S/. 49</h5>
+                        </div>
+                        <div class="products__item-button-container">
+                            <a href="#" class="products__item-button">Detalles</a>
+                            <a href="#" class="products__item-button"> Agregar<i class="bi bi-cart3"></i></a>
+                        </div>
+                    </article>
+                    <article class="products__products-item">
+                        <figure class="products__item-image-container">
+                            <img src="./img/polo.png" alt="Polo adidas" class="products__item-image">
+                        </figure>
+                        <div class="products__item-data">
+                            <h2 class="products__item-data-title">Polo Adidas
+                            </h2>
+                            <h3 class="products__item-data-keywords">Blanco, Adidas, Algodón, Hombre</h3>
+                            <h5 class="products__item-data-price">S/. 49</h5>
+                        </div>
+                        <div class="products__item-button-container">
+                            <a href="#" class="products__item-button">Detalles</a>
+                            <a href="#" class="products__item-button"> Agregar<i class="bi bi-cart3"></i></a>
+                        </div>
+                    </article>
+                    <article class="products__products-item">
+                        <figure class="products__item-image-container">
+                            <img src="./img/polo.png" alt="Polo adidas" class="products__item-image">
+                        </figure>
+                        <div class="products__item-data">
+                            <h2 class="products__item-data-title">Polo Adidas
+                            </h2>
+                            <h3 class="products__item-data-keywords">Blanco, Adidas, Algodón, Hombre</h3>
+                            <h5 class="products__item-data-price">S/. 49</h5>
+                        </div>
+                        <div class="products__item-button-container">
+                            <a href="#" class="products__item-button">Detalles</a>
+                            <a href="#" class="products__item-button"> Agregar<i class="bi bi-cart3"></i></a>
+                        </div>
+                    </article>
+                    <article class="products__products-item">
+                        <figure class="products__item-image-container">
+                            <img src="./img/polo.png" alt="Polo adidas" class="products__item-image">
+                        </figure>
+                        <div class="products__item-data">
+                            <h2 class="products__item-data-title">Polo Adidas
+                            </h2>
+                            <h3 class="products__item-data-keywords">Blanco, Adidas, Algodón, Hombre</h3>
+                            <h5 class="products__item-data-price">S/. 49</h5>
+                        </div>
+                        <div class="products__item-button-container">
+                            <a href="#" class="products__item-button">Detalles</a>
+                            <a href="#" class="products__item-button"> Agregar<i class="bi bi-cart3"></i></a>
+                        </div>
+                    </article>
                 </div>
             </div>
-        </article>
-        <article class="article">
-            <div class="article-container">
-                <div class="article__card">
-                    <h1 class="article__card-title">Polo Adidas</h1>
-                    <h2 class="article__card-keywords">Blanco, Adidas, Algodón, Hombre</h2>
-                    <img src="./img/polo.png" alt="Polo Adidas" class="article__card-image">
-                    <button class="article-card-button">Detalles</button>
-                    <button class="article-card-button">Agregar a carrito</button>
-                </div>
-            </div>
-        </article>
-        <article class="article">
-            <div class="article-container">
-                <div class="article__card">
-                    <h1 class="article__card-title">Polo Adidas</h1>
-                    <h2 class="article__card-keywords">Blanco, Adidas, Algodón, Hombre</h2>
-                    <img src="./img/polo.png" alt="Polo Adidas" class="article__card-image">
-                    <button class="article-card-button">Detalles</button>
-                    <button class="article-card-button">Agregar a carrito</button>
-                </div>
-            </div>
-        </article>
-        <article class="article">
-            <div class="article-container">
-                <div class="article__card">
-                    <h1 class="article__card-title">Polo Adidas</h1>
-                    <h2 class="article__card-keywords">Blanco, Adidas, Algodón, Hombre</h2>
-                    <img src="./img/polo.png" alt="Polo Adidas" class="article__card-image">
-                    <button class="article-card-button">Detalles</button>
-                    <button class="article-card-button">Agregar a carrito</button>
-                </div>
-            </div>
-        </article>
-        <article class="article">
-            <div class="article-container">
-                <div class="article__card">
-                    <h1 class="article__card-title">Polo Adidas</h1>
-                    <h2 class="article__card-keywords">Blanco, Adidas, Algodón, Hombre</h2>
-                    <img src="./img/polo.png" alt="Polo Adidas" class="article__card-image">
-                    <button class="article-card-button">Detalles</button>
-                    <button class="article-card-button">Agregar a carrito</button>
-                </div>
-            </div>
-        </article>
+        </section>
     </main>
 </body>
 </html>
